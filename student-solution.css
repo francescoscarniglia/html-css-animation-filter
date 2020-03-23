@@ -1,1 +1,103 @@
 /* YOUR SOLUTIONS HERE */
+[class^="ex-"] {
+  cursor: pointer;
+}
+
+.ex-1-square {
+    transition: background linear 3s;
+}
+.ex-1-square:hover {
+    background: red;
+}
+
+.ex-2-square {
+    transition: width linear 2s;
+}
+.ex-2-square:active {
+     width: 100%;
+     /* animation: prova 2s;*/
+}
+/*
+ @keyframes prova {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+.ex-3-square {
+  transition: border-radius ease-in .4s;
+  /* transition: border-radius linear .4s; */
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+.ex-4-square {
+  transition: opacity 2s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+.ex-5-square {
+  transition: transform 3s;
+}
+
+.ex-5-square:hover {
+  transform: scale(1.8);
+}
+
+.ex-5-square:active {
+  transform: scale(.8);
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+.ex-7-img {
+    transition: filter 3s;
+}
+.ex-7-img:hover {
+    filter: grayscale(.7) sepia(.7);
+}
+
+.ex-8-img {
+  transition: filter 1s,
+              border-radius linear 1s;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(.7) sepia(.7);
+  border-radius: 20px;
+}
+
+.ex-9-img {
+  transition: filter 3s,
+              border-radius ease-out 3s,
+              transform 3s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(.7) sepia(.7);
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+
+.ex-10-icon {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
